@@ -3,10 +3,11 @@ package lesson2
 //Interfaces and objects
 
 interface AnInterface {
+    val a: Int get() = 4
     fun doSomething()
 }
 
-class AClass : AnInterface {
+class AClass(override val a: Int) : AnInterface {
     override fun doSomething() = TODO()
 }
 
@@ -21,10 +22,10 @@ fun main() {
     /**
      * Creating an instance
      */
-    val instance = AClass()
+    val instance = AClass(3)
 
     /**
-     * Using singleton reference without constructor invokation
+     * Using singleton reference without constructor invocation
      */
     val obj = AnObject
 
@@ -41,4 +42,6 @@ fun main() {
     val voldemort = object {
         fun doSomething(): Unit = TODO()
     }
+
+    voldemort.doSomething()
 }

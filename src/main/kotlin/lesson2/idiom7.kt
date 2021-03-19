@@ -9,3 +9,7 @@ fun checkType(arg: Any) = when(arg){
     is Double -> println("I am a Double")
     else -> println("I don't know who am I?")
 }
+
+fun main() {
+    checkType(true)
+}

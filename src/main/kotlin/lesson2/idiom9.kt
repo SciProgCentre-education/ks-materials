@@ -1,5 +1,7 @@
 package lesson2
 
+import lesson1.returnUnit
+
 /**
  * The declaration if valid because [TODO] returns Nothing
  */
