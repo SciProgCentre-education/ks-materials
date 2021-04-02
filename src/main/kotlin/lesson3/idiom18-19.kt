@@ -29,9 +29,12 @@ fun main() {
 
     val newList = list + "f" + mutableList
 
+    println(newList)
+
     //Bonus
 
     val lambdaList = List(3){it.toString()}
+    println(lambdaList)
 }
 
 /**

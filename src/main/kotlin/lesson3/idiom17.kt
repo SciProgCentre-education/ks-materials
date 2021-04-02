@@ -17,6 +17,8 @@ fun main() {
      */
     fun getAndIncrement() = i.also { i += 1 }
 
+    println(getAndIncrement())
+
     /**
      * Configure properties of an object (apply)
      * https://kotlinlang.org/docs/idioms.html#configure-properties-of-an-object-apply

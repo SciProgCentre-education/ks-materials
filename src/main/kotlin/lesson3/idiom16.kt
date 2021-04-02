@@ -6,6 +6,8 @@ object AClass{
     val c = "c"
 }
 
+fun getAClass(): AClass? = null
+
 /**
  * [with]/[run]/[let] are used to create a scope with given argument or receiver
  */
@@ -14,20 +16,20 @@ fun main() {
     println("a = ${AClass.a}, b= ${AClass.b}, c = ${AClass.c}")
 
     // Using `with`
-    with(AClass){
+    val res = with(AClass){
         // AClass type is the receiver in this scope
-        println("a = $a, b= $b, c = $c")
+        println("a = $a, b = $b, c = $c")
         return@with "some value"
     }
 
     //using `run`
-    AClass.run {
+    getAClass()?.run {
         // the same as above
         println("a = $a, b= $b, c = $c")
     }
 
     //Using `let` to compose result. Not recommended to use without a need
-    val letResult = AClass.let {
-        it.c + it.a
+    val letResult = getAClass()?.let { arg ->
+        arg.c + arg.a
     }
 }

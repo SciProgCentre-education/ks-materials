@@ -7,5 +7,5 @@ class AClassWithList{
 
 fun main() {
     val obj = AClassWithList()
-
+    obj.list
 }

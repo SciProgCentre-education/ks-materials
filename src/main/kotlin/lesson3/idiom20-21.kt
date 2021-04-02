@@ -15,5 +15,11 @@ fun main() {
         println("$k -> $v")
     }
 
-    val (a,b) = Pair(1, 2)
+    map.forEach { (k, v) -> println("$k -> $v")}
+
+    val (a, b) = Pair(1, 2)
+
+    val coord = doubleArrayOf(0.0, 1.0, 2.0)
+
+    val (x,y,z) = coord
 }
