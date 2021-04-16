@@ -8,4 +8,5 @@ fun main() {
             add(it)
         }
     }
+    println(list)
 }

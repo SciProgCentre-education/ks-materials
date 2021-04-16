@@ -1,13 +1,25 @@
 package lesson4
 
-class Bad{
+
+open class Bad{
     val value: Int
 
     init {
         value = requestValue()
     }
 
-    private fun requestValue(): Int = TODO()
+    open fun requestValue(): Int {
+        doSomethingElse()
+        return 2
+    }
+
+    private fun doSomethingElse(){
+        println(value)
+    }
+}
+
+fun main() {
+    Bad()
 }
 
 

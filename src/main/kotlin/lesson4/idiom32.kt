@@ -4,6 +4,7 @@ class ClassWithALazyProperty{
     //Use lazy delegate for something that should be calculated ones on first call
     val lazyValue by lazy {
         //Do dome heavy logic here
+        22
     }
 }
 

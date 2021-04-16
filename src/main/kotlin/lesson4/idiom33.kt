@@ -31,6 +31,7 @@ inline fun <reified T: Any> List<T>.prettyPrint() = forEach {
 }
 
 /**
- * **WARNING** inline functions are an advanced feature and should be used only for reification or non-local return
+ * **WARNING** inline functions are an advanced feature and should be used only for
+ * reification or non-local return
  * NOT for optimization.
  */

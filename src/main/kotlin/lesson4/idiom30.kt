@@ -1,9 +1,10 @@
 package lesson4
 
+import kotlin.random.Random
+
 interface Factory<T : Any> {
     fun build(str: String): T
 }
-
 
 class IntContainer(val arg: Int) {
     companion object : Factory<IntContainer> {
@@ -21,4 +22,7 @@ fun <T : Any> buildContainer(str: String, factory: Factory<T>): T = factory.buil
 
 fun main() {
     buildContainer("22", IntContainer)
+
+    val random = Random
+    random.nextDouble()
 }

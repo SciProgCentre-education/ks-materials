@@ -6,7 +6,7 @@ import java.nio.file.Paths
 fun main() {
     val stream = Files.newInputStream(Paths.get("/some/file.txt"))
     // The resource is automatically closed  when leaving the scope
-    stream.buffered().reader().use { reader ->
+    stream.bufferedReader().use { reader ->
         println(reader.readText())
     }
 }

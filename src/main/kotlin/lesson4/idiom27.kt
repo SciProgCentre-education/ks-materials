@@ -6,7 +6,7 @@ import kotlin.random.Random
 fun main() {
     val b = Random.nextBoolean()
     // assign value to an expression
-    val a = if (b) 0 else 1
+    val a = if (b) 0 else 1 // b ? 0 : 1
 
     //Use Try/catch as an exception
     val result = try {
@@ -14,5 +14,6 @@ fun main() {
     } catch (e: NumberFormatException) {
         null //Strongly discouraged in performance-critical code
     }
+    println(result)
 
 }
