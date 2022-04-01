@@ -28,7 +28,7 @@ fun main() {
         println("a = $a, b= $b, c = $c")
     }
 
-    //Using `let` to compose result. Not recommended to use without a need
+    //Using `let` to compose result. Not recommended using without a need
     val letResult = getAClass()?.let { arg ->
         arg.c + arg.a
     }

@@ -1,5 +1,7 @@
 package lesson3
 
+import java.util.ArrayList
+
 /**
  * Lists and mutable lists
  */
@@ -14,7 +16,7 @@ fun main() {
     /**
      * This one creates a mutable list
      */
-    val mutableList = mutableListOf("a", "b", "c")
+    val mutableList: MutableList<String> = mutableListOf("a", "b", "c")
     mutableList[2] = "d"
     mutableList.add("e")
     mutableList += "f"
@@ -23,17 +25,17 @@ fun main() {
     /**
      * This one creates a mutable ArrayList.
      */
-    val arrayList = arrayListOf("a", "b", "c")
+    val arrayList: ArrayList<String> = arrayListOf("a", "b", "c")
 
     //Danger zone
 
-    val newList = list + "f" + mutableList
+    val newList: List<String> = list + "f" + mutableList
 
     println(newList)
 
     //Bonus
 
-    val lambdaList = List(3){it.toString()}
+    val lambdaList = List(3){ it.toString() }
     println(lambdaList)
 }
 

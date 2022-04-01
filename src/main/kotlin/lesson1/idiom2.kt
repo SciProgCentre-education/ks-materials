@@ -18,4 +18,7 @@ fun main() {
 
     /* recommended */
     val sum = (0..20).sum()
+
+    val intArray: IntArray = IntArray(20){ it }
+    intArray.sum()
 }

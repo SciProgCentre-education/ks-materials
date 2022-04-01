@@ -8,8 +8,15 @@ fun String.countOs(): Int = count { it == 'о' } // implicit this points to Stri
 fun main() {
     fun Int.printMe() = println(this) // explicit this
 
-    "обороноспособность".countOs().printMe()
+    "вылысыпыдыстычка".countOs().printMe()
+    
+//    listOf(1, 2, 3).odd
+//    listOf(1, 2.0, 3).odd
 }
+
+//fun doSmth(){
+//    "вылысыпыдыстычка".countOs().printMe()
+//}
 
 /**
  * Extension property (must be virtual)

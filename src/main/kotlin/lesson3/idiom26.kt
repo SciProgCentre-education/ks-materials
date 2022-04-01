@@ -6,7 +6,9 @@ fun main() {
     val result = list
         .filter { it % 2 == 0 } //select even numbers
         .map { it * it } // get square of each element
-        .sumByDouble { it.toDouble() } //use one of reduce operations
+        //.onEach { println(it) }
+        //.sumOf { it } //use one of reduce operations
+        .reduce { acc, i -> acc + i }
 
     println(result)
 }

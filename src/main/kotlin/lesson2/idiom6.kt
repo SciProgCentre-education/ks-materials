@@ -27,7 +27,7 @@ fun main() {
     /**
      * Using singleton reference without constructor invocation
      */
-    val obj = AnObject
+    val obj: AnInterface = AnObject
 
     /**
      * Anonymous object

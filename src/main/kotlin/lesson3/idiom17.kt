@@ -18,6 +18,7 @@ fun main() {
     fun getAndIncrement() = i.also { i += 1 }
 
     println(getAndIncrement())
+    println(i)
 
     /**
      * Configure properties of an object (apply)

@@ -16,8 +16,8 @@ fun findSomething(): Int {
 fun checkCondition(): Int {
     fun conditionSatisfied() = false
 
-    if (conditionSatisfied()) {
-        return 1
+    return if (conditionSatisfied()) {
+        1
     } else {
         //error is Nothing
         error("Condition is not satisfied")

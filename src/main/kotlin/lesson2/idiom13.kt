@@ -3,9 +3,10 @@ package lesson2
 fun printNotNull(any: Any) = println(any)
 
 val value: Int? = 2
+//val value: Int? by lazy{ 2 }
 
 fun main() {
-
+    //printNotNull(value) // Error
     if (value != null) {
         //not guaranteed to work with mutable variable
         printNotNull(value)

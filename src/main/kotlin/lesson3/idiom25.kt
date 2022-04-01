@@ -26,4 +26,5 @@ fun main() {
     }
     integrate(0.0, PI) { sin(it) }
     integrate(0.0, PI, step = 0.02) { sin(it) }
+    //integrate(0.0, step = 0.02, PI) { sin(it) }
 }
